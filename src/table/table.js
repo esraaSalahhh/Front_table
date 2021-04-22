@@ -9,7 +9,7 @@ import Roww from './row';
 const Tablee = (props) => {
     const [data, setData] = useState(null);
     useEffect(() => {
-        axios.get(`http://127.0.0.1:8000/api/getData`)
+        axios.get(`https://backendlarave.herokuapp.com/api/getData`)
           .then(function (response) {
             console.log(response.data);
             setData(response.data);

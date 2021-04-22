@@ -45,7 +45,7 @@ const AddForm = (props) => {
 
 
         if(formErrors.nameErrors===null &&formErrors.priceErrors===null &&formErrors.quantityErrors===null ){
-            axios.post('http://127.0.0.1:8000/api/addData',{
+            axios.post('https://backendlarave.herokuapp.com/api/addData',{
                 name    : AddForm.name,
                 price : AddForm.price ,
                 quantity : AddForm.quantity ,

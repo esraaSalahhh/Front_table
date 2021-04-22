@@ -25,7 +25,7 @@ console.log(props);
     const handleFormSubmit = () => {
         console.log(AddForm);
 
-            axios.put(`http://127.0.0.1:8000/api/updateData/${props.location.id}`,{
+            axios.put(`https://backendlarave.herokuapp.com/api/updateData/${props.location.id}`,{
                 name    : AddForm.name,
                 price : AddForm.price ,
                 quantity : AddForm.quantity ,

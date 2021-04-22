@@ -10,7 +10,7 @@ const row = (props) => {
 
     console.log(data);
     const Delete = (e) => {
-        axios.delete(`http://127.0.0.1:8000/api/deleteData/${data.id}`)
+        axios.delete(`https://backendlarave.herokuapp.com/api/deleteData/${data.id}`)
             .then(function (response) {
                 console.log(response);
                 window.location.reload(true);
